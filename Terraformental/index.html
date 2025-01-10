@@ -65,7 +65,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ShadyGames",
         productName: "Terraformental",
-        productVersion: "0.2.1",
+        productVersion: "0.2.2",
         showBanner: unityShowBanner,
       };
 
@@ -117,7 +117,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
               }).catch((message) => {
                 alert(message);
